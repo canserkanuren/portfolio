@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve"
+    "start": "nx serve",
+    "build": "nx run-many --target=build --parallel 10 --skip-nx-cache",
+    "lint": "nx run-many --target=lint --parallel 10 --skip-nx-cache",
+    "generate": "nx g @spartan-ng/nx:ui"
   },
   "private": true,
   "dependencies": {
@@ -16,8 +19,10 @@
     "@angular/platform-browser": "~17.0.0",
     "@angular/platform-browser-dynamic": "~17.0.0",
     "@angular/router": "~17.0.0",
+    "@ng-icons/core": "^25.1.0",
     "@nx/angular": "17.2.7",
     "@spartan-ng/nx": "^0.0.1-alpha.322",
+    "@spartan-ng/ui-accordion-brain": "0.0.1-alpha.319",
     "@spartan-ng/ui-core": "^0.0.1-alpha.319",
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
