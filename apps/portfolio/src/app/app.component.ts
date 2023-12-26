@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule, HlmButtonDirective],
   selector: 'portfolio-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  template: ` <button hlmBtn>Button</button>`,
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'portfolio';
