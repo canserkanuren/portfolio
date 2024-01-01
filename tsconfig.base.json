@@ -18,14 +18,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@canserkanuren/profile": [
+        "packages/profile/src/index.ts"
+      ],
+      "@spartan-ng/ui-accordion-helm": [
+        "packages/primitives/ui-accordion-helm/src/index.ts"
+      ],
       "@spartan-ng/ui-button-helm": [
         "packages/primitives/ui-button-helm/src/index.ts"
       ],
       "@spartan-ng/ui-icon-helm": [
         "packages/primitives/ui-icon-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-accordion-helm": [
-        "packages/primitives/ui-accordion-helm/src/index.ts"
+      "@spartan-ng/ui-typography-helm": [
+        "packages/primitives/ui-typography-helm/src/index.ts"
       ]
     }
   },

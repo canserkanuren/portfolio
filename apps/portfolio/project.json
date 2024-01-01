@@ -17,7 +17,12 @@
         "tsConfig": "apps/portfolio/tsconfig.app.json",
         "assets": [
           "apps/portfolio/src/favicon.ico",
-          "apps/portfolio/src/assets"
+          "apps/portfolio/src/assets",
+          {
+            "input": "packages/profile/assets",
+            "glob": "**.*",
+            "output": "assets"
+          }
         ],
         "styles": ["apps/portfolio/src/styles.css"],
         "scripts": []
