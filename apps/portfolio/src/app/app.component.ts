@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
 import {
   HlmAccordionContentDirective,
   HlmAccordionDirective,
-  HlmAccordionIconComponent,
+  HlmAccordionIconDirective,
   HlmAccordionItemDirective,
   HlmAccordionTriggerDirective
 } from '@spartan-ng/ui-accordion-helm';
@@ -14,12 +15,13 @@ import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
   standalone: true,
   imports: [
     RouterModule,
+    BrnAccordionContentComponent,
     HlmButtonDirective,
     HlmAccordionDirective,
     HlmAccordionItemDirective,
     HlmAccordionTriggerDirective,
     HlmAccordionContentDirective,
-    HlmAccordionIconComponent,
+    HlmAccordionIconDirective,
     HlmIconComponent
   ],
   selector: 'portfolio-root',
