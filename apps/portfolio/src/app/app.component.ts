@@ -8,6 +8,23 @@ import { ProfileComponent } from '@canserkanuren/profile';
   template: `
     <main class="h-100 w-100 p-20">
       <csu-portfolio-profile />
+
+      <!-- <ng-container>
+        <button hlmBtn variant="outline">Outlined button</button>
+        <button hlmBtn>Button without outline</button>
+
+        <div hlmAccordion>
+          <div hlmAccordionItem>
+            <button hlmAccordionTrigger>
+              Is it accessible?
+              <hlm-icon hlmAccIcon />
+            </button>
+            <brn-accordion-content hlm>
+              Yes. It adheres to the WAI-ARIA design pattern.
+            </brn-accordion-content>
+          </div>
+        </div>
+      </ng-container> -->
     </main>
   `
 })

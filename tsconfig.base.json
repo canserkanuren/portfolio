@@ -10,17 +10,12 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
+    "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@canserkanuren/profile": [
-        "packages/profile/src/index.ts"
-      ],
+      "@canserkanuren/profile": ["packages/profile/src/index.ts"],
       "@spartan-ng/ui-accordion-helm": [
         "packages/primitives/ui-accordion-helm/src/index.ts"
       ],
@@ -35,10 +30,7 @@
       ]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ],
+  "exclude": ["node_modules", "tmp"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
