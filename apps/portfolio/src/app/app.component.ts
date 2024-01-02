@@ -34,7 +34,7 @@ import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
         <div hlmAccordionItem>
           <button hlmAccordionTrigger>
             Is it accessible?
-            <hlm-accordion-icon />
+            <hlm-icon hlmAccIcon />
           </button>
           <brn-accordion-content hlm>
             Yes. It adheres to the WAI-ARIA design pattern.
