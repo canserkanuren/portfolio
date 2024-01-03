@@ -16,7 +16,7 @@ import { SocialsComponent } from './socials/socials.component';
 
       <section class="flex">
         <img
-          class="object"
+          class="object-scale-down"
           src="assets/photo_profil.jpeg"
           alt="Profile picture"
           height="100"
