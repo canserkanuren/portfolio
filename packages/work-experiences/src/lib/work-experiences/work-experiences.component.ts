@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
 import { HlmAccordionImports } from '@spartan-ng/ui-accordion-helm';
-import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
 
 @Component({
@@ -11,23 +10,20 @@ import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
     // primitives
     BrnAccordionContentComponent,
     HlmAccordionImports,
-    HlmIconComponent,
-    HlmButtonDirective
+    HlmIconComponent
   ],
   template: `
-    <ng-container>
-      <div hlmAccordion>
-        <div hlmAccordionItem>
-          <button hlmAccordionTrigger>
-            Work Experiences
-            <hlm-icon hlmAccIcon />
-          </button>
-          <brn-accordion-content hlm>
-            Here's my work experiences
-          </brn-accordion-content>
-        </div>
+    <div hlmAccordion>
+      <div hlmAccordionItem>
+        <button hlmAccordionTrigger>
+          Work Experiences
+          <hlm-icon hlmAccIcon />
+        </button>
+        <brn-accordion-content hlm>
+          Here's my work experiences
+        </brn-accordion-content>
       </div>
-    </ng-container>
+    </div>
   `
 })
 export class WorkExperiencesComponent {}

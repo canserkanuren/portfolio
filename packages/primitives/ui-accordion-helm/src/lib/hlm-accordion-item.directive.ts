@@ -14,7 +14,10 @@ export class HlmAccordionItemDirective {
     hlm('flex flex-1 flex-col border-b border-border', this._userCls())
   );
 
-  @HostBinding('class') clazz = this._computedClass();
+  @HostBinding('class') get classes(): string {
+    return this._computedClass();
+  }
+
   @Input()
   set class(userCls: ClassValue) {
     this._userCls.set(userCls);

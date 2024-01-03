@@ -27,7 +27,9 @@ export class HlmAccordionDirective {
     )
   );
 
-  @HostBinding('class') clazz = this._computedClass();
+  @HostBinding('class') get classes(): string {
+    return this._computedClass();
+  }
 
   @Input()
   set class(userCls: ClassValue) {

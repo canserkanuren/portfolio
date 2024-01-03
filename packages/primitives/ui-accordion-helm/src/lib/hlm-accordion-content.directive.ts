@@ -26,7 +26,9 @@ export class HlmAccordionContentDirective {
     return hlm('text-sm transition-all grid', gridRows, this._userCls());
   });
 
-  @HostBinding('class') clazz = this._computedClass();
+  @HostBinding('class') get classes(): string {
+    return this._computedClass();
+  }
 
   @Input()
   set class(userCls: ClassValue) {

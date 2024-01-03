@@ -93,7 +93,9 @@ export class HlmIconComponent implements OnDestroy {
     return hlm(iconVariants({ variant }), this.userCls(), hostClasses);
   });
 
-  @HostBinding('class') clazz = this._computedClass();
+  @HostBinding('class') get classes(): string {
+    return this._computedClass();
+  }
 
   constructor() {
     if (isPlatformBrowser(this._platformId)) {

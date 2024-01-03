@@ -20,5 +20,7 @@ export class HlmH2Directive {
   private _generateClass() {
     return hlm(hlmH2, this._userCls());
   }
-  @HostBinding('class') clazz = this._computedClass();
+  @HostBinding('class') get classes(): string {
+    return this._computedClass();
+  }
 }

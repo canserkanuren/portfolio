@@ -19,5 +19,7 @@ export class HlmLargeDirective {
   private _generateClass() {
     return hlm(hlmLarge, this._userCls());
   }
-  @HostBinding('class') clazz = this._computedClass();
+  @HostBinding('class') get classes(): string {
+    return this._computedClass();
+  }
 }

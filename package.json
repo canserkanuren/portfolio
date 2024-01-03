@@ -6,7 +6,7 @@
     "start": "nx serve",
     "build": "nx run-many --target=build --parallel 10 --skip-nx-cache",
     "lint": "nx run-many --target=lint --parallel 10 --skip-nx-cache",
-    "generate": "nx g @spartan-ng/nx:ui"
+    "generate": "nx g @spartan-ng/cli:ui"
   },
   "private": true,
   "dependencies": {

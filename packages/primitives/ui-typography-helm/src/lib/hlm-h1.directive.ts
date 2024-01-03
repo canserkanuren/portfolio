@@ -3,7 +3,7 @@ import { hlm } from '@spartan-ng/ui-core';
 import { ClassValue } from 'clsx';
 
 export const hlmH1 =
-  'scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl';
+  'scroll-m-20 text-4xl font-semibold tracking-tight lg:text-5xl';
 
 @Directive({
   selector: '[hlmH1]',
@@ -20,5 +20,7 @@ export class HlmH1Directive {
   private _generateClass() {
     return hlm(hlmH1, this._userCls());
   }
-  @HostBinding('class') clazz = this._computedClass();
+  @HostBinding('class') get classes(): string {
+    return this._computedClass();
+  }
 }

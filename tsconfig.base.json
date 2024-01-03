@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@canserkanuren/about": ["packages/about/src/index.ts"],
       "@canserkanuren/profile": ["packages/profile/src/index.ts"],
       "@canserkanuren/work-experiences": [
         "packages/work-experiences/src/index.ts"

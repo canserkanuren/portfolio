@@ -2,7 +2,7 @@ import { Directive, HostBinding, Input, computed, signal } from '@angular/core';
 import { hlm } from '@spartan-ng/ui-core';
 import { ClassValue } from 'clsx';
 
-export const hlmP = 'leading-7 [&:not(:first-child)]:mt-6';
+export const hlmP = 'leading-7 [&:not(:first-child)]:mt-3';
 
 @Directive({
   selector: '[hlmP]',
@@ -19,5 +19,7 @@ export class HlmPDirective {
   private _generateClass() {
     return hlm(hlmP, this._userCls());
   }
-  @HostBinding('class') clazz = this._computedClass();
+  @HostBinding('class') get classes(): string {
+    return this._computedClass();
+  }
 }
