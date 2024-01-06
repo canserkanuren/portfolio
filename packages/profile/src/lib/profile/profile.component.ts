@@ -7,8 +7,10 @@ import { SocialsComponent } from './socials/socials.component';
   standalone: true,
   imports: [SocialsComponent, PersonalComponent],
   template: `
-    <section class="w-100 flex justify-between">
-      <section class="flex flex-col h-48 justify-between">
+    <section
+      class="w-100 flex flex-col-reverse gap-3 justify-between text-center md:flex-row md:gap-0 md:text-start"
+    >
+      <section class="h-40 flex flex-col justify-between md:h-48">
         <csu-portfolio-personal />
 
         <csu-portfolio-socials />
