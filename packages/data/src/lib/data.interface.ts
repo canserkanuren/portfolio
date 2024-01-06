@@ -16,6 +16,7 @@ export interface WorkExperience {
   company: string;
   begunYear: string;
   endedYear: string;
+  summary: string;
   missions: string[];
   skills: Skill[];
 }

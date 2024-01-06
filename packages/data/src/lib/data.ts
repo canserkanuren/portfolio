@@ -19,6 +19,7 @@ export const RESUME: Resume = {
       company: 'Crédit Agricole CIB',
       begunYear: '10-2023',
       endedYear: 'Present',
+      summary: '',
       missions: [''],
       skills: [
         {
@@ -56,7 +57,16 @@ export const RESUME: Resume = {
       company: 'Société Générale',
       begunYear: '04-2021',
       endedYear: '10-2023',
-      missions: [''],
+      summary: '',
+      missions: [
+        'Selection of a common back-end language (Java, TypeScript, Python) for my current team but also for all the service that I was in (around 80 developers)',
+        'Creation of a Python API framework, that will be used by all the service',
+        "Selection of a common front-end framework (React / Angular) and beginning of development of a portal, that'll be used by all Société Générale's developers, in order to onboarding themselves on the Software Factory tools",
+        "Definition, conception and development of APIs and also support development teams in API definition but also on the portal's new features",
+        'Defintion and configuration of the Continuous Integration and Deployment for all the service, which was based on Kubernetes',
+        'Defintion and creation of a common Helm chart (front-end / back-end)',
+        'Definition and creation of a common Jenkins pipeline library, in order to build, test, and deploy front-end and back-end applications'
+      ],
       skills: [
         {
           name: 'Languages',
@@ -89,7 +99,12 @@ export const RESUME: Resume = {
       company: 'Société Générale',
       begunYear: '09-2019',
       endedYear: '04-2021',
-      missions: [''],
+      summary: '',
+      missions: [
+        'Maintenance of the current Continuous Delivery platform',
+        'Creation of satellite service around the current Continuous Delivery platform such as rights management tools but also creation of statistics of its usage',
+        "Definition, conception and development of a Kubernetes onboarding tool, that would allow Société Générale's developers to onboard themselves on this platform"
+      ],
       skills: [
         {
           name: 'Languages',
@@ -134,7 +149,12 @@ export const RESUME: Resume = {
       company: 'Société Générale',
       begunYear: '09-2019',
       endedYear: '04-2021',
-      missions: [''],
+      summary: '',
+      missions: [
+        'Definition of REST WebServices',
+        'Migration from JavaScript to TypeScript for the current AngularJS application',
+        "Definition, conception and development of common libraries used by Crédit Du Nord's new-gen applications"
+      ],
       skills: [
         {
           name: 'Languages',
