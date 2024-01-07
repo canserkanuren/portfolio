@@ -1,7 +1,7 @@
 import { Resume } from './data.interface';
 
 export const RESUME: Resume = {
-  function: '',
+  function: 'Lead Full Stack Developer',
   socials: [
     {
       icon: 'radixLinkedinLogo',
@@ -12,15 +12,23 @@ export const RESUME: Resume = {
       url: 'https://github.com/canserkanuren'
     }
   ],
-  aboutMe: '',
+  aboutMe: [
+    'I am currently a Angular Tech Lead, working at Crédit Agricole in Montrouge, Paris, with many areas of expertise such as in front-end development, Scrum method but also in CI/CD.',
+    "I have been working for the past 6 years in Société Générale, as a Full Stack Developer and my main mission was to create tools that would benefit the company's developers in a self-care mode, such as onboarding tools in Société Générale's Cloud Platform but also on Software Factory tools (SonarQube, GitHub, Nexus, Artifactory, etc...)"
+  ],
   workExperiences: [
     {
       title: 'Angular Tech Lead',
       company: 'Crédit Agricole CIB',
       begunYear: '10-2023',
       endedYear: 'Present',
-      summary: '',
-      missions: [''],
+      summary:
+        "This mission's goal was primarily enhancements of the current application, more precisely about performance issues when using it but also on the CI/CD chain ",
+      missions: [
+        'Definition, conception and development of a new Angular project architecture, based on NX',
+        'Ensure code quality meets its standards, analyzed through SonarQube / Checkmarx',
+        'Definition, conception and development of new features'
+      ],
       skills: [
         {
           name: 'Languages',
@@ -57,7 +65,8 @@ export const RESUME: Resume = {
       company: 'Société Générale',
       begunYear: '04-2021',
       endedYear: '10-2023',
-      summary: '',
+      summary:
+        "Early 2021, Société Générale decided to converge CI/CD offers of all entities, by creating a new one, Digital & Data Services, which will handle all common offers for all Société Générale's developers. I've joined the Automation Squad as a Full Stack developer, in order to create self-service tools for developers (around 10 000). My role was also to create a whole new CI/CD chain, Helm charts but also usage of GitOps in our development process.",
       missions: [
         'Selection of a common back-end language (Java, TypeScript, Python) for my current team but also for all the service that I was in (around 80 developers)',
         'Creation of a Python API framework, that will be used by all the service',
@@ -99,9 +108,9 @@ export const RESUME: Resume = {
       company: 'Société Générale',
       begunYear: '09-2019',
       endedYear: '04-2021',
-      summary: '',
+      summary:
+        "My role for this mission was to maintain the current deployment platform used by Société Générale's developers, which was Alien4Cloud, but also create applications around it, to make its use a lot easier than it was before.",
       missions: [
-        'Maintenance of the current Continuous Delivery platform',
         'Creation of satellite service around the current Continuous Delivery platform such as rights management tools but also creation of statistics of its usage',
         "Definition, conception and development of a Kubernetes onboarding tool, that would allow Société Générale's developers to onboard themselves on this platform"
       ],
@@ -147,8 +156,8 @@ export const RESUME: Resume = {
     {
       title: 'Full Stack Developer',
       company: 'Société Générale',
-      begunYear: '09-2019',
-      endedYear: '04-2021',
+      begunYear: '09-2017',
+      endedYear: '09-2019',
       summary: '',
       missions: [
         'Definition of REST WebServices',

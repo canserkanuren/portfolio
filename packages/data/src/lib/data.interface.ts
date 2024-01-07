@@ -1,7 +1,7 @@
 export interface Resume {
   function: string;
   socials: Social[];
-  aboutMe: string;
+  aboutMe: string[];
   workExperiences: WorkExperience[];
   skills: Skill[];
 }

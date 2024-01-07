@@ -7,6 +7,7 @@ import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
 import {
   HlmH2Directive,
   HlmH3Directive,
+  HlmPDirective,
   HlmUlDirective
 } from '@spartan-ng/ui-typography-helm';
 
@@ -20,6 +21,7 @@ import {
     HlmIconComponent,
     HlmH2Directive,
     HlmH3Directive,
+    HlmPDirective,
     HlmUlDirective,
     // common components
     SkillsComponent
@@ -40,6 +42,13 @@ import {
         </button>
 
         <brn-accordion-content hlm>
+          <section class="mb-2">
+            <h3 hlmH3>Summary</h3>
+            <p hlmP>
+              {{ workExperience.summary }}
+            </p>
+          </section>
+
           <section class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2">
             <section>
               <h3 hlmH3>Missions</h3>
