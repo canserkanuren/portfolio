@@ -1,1 +1,1 @@
-export * from './lib/skills/skills.component';
+export * from './lib/components';

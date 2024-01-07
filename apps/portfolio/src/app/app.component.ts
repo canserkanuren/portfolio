@@ -3,6 +3,7 @@ import { AboutComponent } from '@canserkanuren/about';
 import { ProfileComponent } from '@canserkanuren/profile';
 import { SkillsContainerComponent } from '@canserkanuren/skills';
 import { WorkExperiencesComponent } from '@canserkanuren/work-experiences';
+import { LanguagesChoiceComponent } from './languages-choice/languages-choice.component';
 
 @Component({
   standalone: true,
@@ -11,11 +12,14 @@ import { WorkExperiencesComponent } from '@canserkanuren/work-experiences';
     AboutComponent,
     ProfileComponent,
     WorkExperiencesComponent,
-    SkillsContainerComponent
+    SkillsContainerComponent,
+    LanguagesChoiceComponent
   ],
   selector: 'csu-portfolio-root',
   template: `
-    <main class="flex flex-col container p-10 gap-6 md:p-20">
+    <main class="flex flex-col container px-10 py-5 gap-6 md:px-20">
+      <csu-portfolio-languages-choice />
+
       <csu-portfolio-profile />
 
       <csu-portfolio-about />

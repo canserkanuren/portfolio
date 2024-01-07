@@ -1,2 +1,2 @@
 export * from './lib/data';
-export * from './lib/data.interface';
+export * from './lib/enums';

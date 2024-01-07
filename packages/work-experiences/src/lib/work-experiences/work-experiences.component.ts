@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, Signal, inject } from '@angular/core';
 import { SkillsComponent } from '@canserkanuren/common';
-import { RESUME, WorkExperience } from '@canserkanuren/data';
+import { WorkExperience } from '@canserkanuren/data';
+import { ResumeStore } from '@canserkanuren/store';
 import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
 import { HlmAccordionImports } from '@spartan-ng/ui-accordion-helm';
 import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
@@ -31,47 +32,49 @@ import {
 
     <div hlmAccordion>
       @for (workExperience of workExperiences(); track workExperience.title) {
-      <div hlmAccordionItem>
-        <button hlmAccordionTrigger>
-          <strong>
-            {{ workExperience.title }} &#64; {{ workExperience.company }}, from
-            {{ workExperience.begunYear }} to
-            {{ workExperience.endedYear }}
-          </strong>
-          <hlm-icon hlmAccIcon />
-        </button>
+        <div hlmAccordionItem>
+          <button hlmAccordionTrigger>
+            <strong>
+              {{ workExperience.title }} &#64; {{ workExperience.company }},
+              from {{ workExperience.begunYear }} to
+              {{ workExperience.endedYear }}
+            </strong>
+            <hlm-icon hlmAccIcon />
+          </button>
 
-        <brn-accordion-content hlm>
-          <section class="mb-2">
-            <h3 hlmH3>Summary</h3>
-            <p hlmP>
-              {{ workExperience.summary }}
-            </p>
-          </section>
-
-          <section class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2">
-            <section>
-              <h3 hlmH3>Missions</h3>
-
-              <ul hlmUl>
-                @for (mission of workExperience.missions; track mission) {
-                <li>{{ mission }}</li>
-                }
-              </ul>
+          <brn-accordion-content hlm>
+            <section class="mb-2">
+              <h3 hlmH3>Summary</h3>
+              <p hlmP>
+                {{ workExperience.summary }}
+              </p>
             </section>
 
-            <section>
-              <h3 hlmH3>Skills</h3>
+            <section class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2">
+              <section>
+                <h3 hlmH3>Missions</h3>
 
-              <csu-portfolio-skills [skills]="workExperience.skills" />
+                <ul hlmUl>
+                  @for (mission of workExperience.missions; track mission) {
+                    <li>{{ mission }}</li>
+                  }
+                </ul>
+              </section>
+
+              <section>
+                <h3 hlmH3>Skills</h3>
+
+                <csu-portfolio-skills [skills]="workExperience.skills" />
+              </section>
             </section>
-          </section>
-        </brn-accordion-content>
-      </div>
+          </brn-accordion-content>
+        </div>
       }
     </div>
   `
 })
 export class WorkExperiencesComponent {
-  workExperiences = signal<WorkExperience[]>(RESUME.workExperiences);
+  private readonly store = inject(ResumeStore);
+
+  workExperiences: Signal<WorkExperience[]> = this.store.workExperience;
 }

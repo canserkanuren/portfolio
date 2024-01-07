@@ -19,6 +19,11 @@ export class HlmAccordionDirective {
   private readonly _brn = inject(BrnAccordionDirective);
 
   private readonly _userCls = signal<ClassValue>('');
+  @Input()
+  set class(userCls: ClassValue) {
+    this._userCls.set(userCls);
+  }
+
   protected readonly _computedClass = computed(() =>
     hlm(
       'flex',
@@ -29,10 +34,5 @@ export class HlmAccordionDirective {
 
   @HostBinding('class') get classes(): string {
     return this._computedClass();
-  }
-
-  @Input()
-  set class(userCls: ClassValue) {
-    this._userCls.set(userCls);
   }
 }

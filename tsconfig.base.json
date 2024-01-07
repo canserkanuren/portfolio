@@ -10,17 +10,35 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@canserkanuren/about": ["packages/about/src/index.ts"],
-      "@canserkanuren/common": ["packages/common/src/index.ts"],
-      "@canserkanuren/data": ["packages/data/src/index.ts"],
-      "@canserkanuren/profile": ["packages/profile/src/index.ts"],
-      "@canserkanuren/skills": ["packages/skills/src/index.ts"],
-      "@canserkanuren/education": ["packages/education/src/index.ts"],
+      "@canserkanuren/about": [
+        "packages/about/src/index.ts"
+      ],
+      "@canserkanuren/common": [
+        "packages/common/src/index.ts"
+      ],
+      "@canserkanuren/data": [
+        "packages/data/src/index.ts"
+      ],
+      "@canserkanuren/education": [
+        "packages/education/src/index.ts"
+      ],
+      "@canserkanuren/profile": [
+        "packages/profile/src/index.ts"
+      ],
+      "@canserkanuren/skills": [
+        "packages/skills/src/index.ts"
+      ],
+      "@canserkanuren/store": [
+        "packages/store/src/index.ts"
+      ],
       "@canserkanuren/work-experiences": [
         "packages/work-experiences/src/index.ts"
       ],
@@ -33,12 +51,21 @@
       "@spartan-ng/ui-icon-helm": [
         "packages/primitives/ui-icon-helm/src/index.ts"
       ],
+      "@spartan-ng/ui-switch-helm": [
+        "packages/primitives/ui-switch-helm/src/index.ts"
+      ],
       "@spartan-ng/ui-typography-helm": [
         "packages/primitives/ui-typography-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-label-helm": [
+        "packages/primitives/ui-label-helm/src/index.ts"
       ]
     }
   },
-  "exclude": ["node_modules", "tmp"],
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

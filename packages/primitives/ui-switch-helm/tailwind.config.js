@@ -1,0 +1,7 @@
+const { join } = require('path');
+const sharedTailwindConfig = require('../../tailwind-preset/tailwind.config');
+
+module.exports = {
+  presets: [sharedTailwindConfig],
+  content: [join(__dirname, 'src/**/!(*.stories|*.spec).{ts,html}')]
+};

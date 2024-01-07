@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, Signal, inject } from '@angular/core';
 import { SkillsComponent } from '@canserkanuren/common';
-import { RESUME, Skill } from '@canserkanuren/data';
+import { Skill } from '@canserkanuren/data';
+import { ResumeStore } from '@canserkanuren/store';
 import { HlmH2Directive } from '@spartan-ng/ui-typography-helm';
 
 @Component({
@@ -19,5 +20,7 @@ import { HlmH2Directive } from '@spartan-ng/ui-typography-helm';
   `
 })
 export class SkillsContainerComponent {
-  skills = signal<Skill[]>(RESUME.skills);
+  private readonly store = inject(ResumeStore);
+
+  skills: Signal<Skill[]> = this.store.skills;
 }
