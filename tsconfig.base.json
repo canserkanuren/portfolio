@@ -18,9 +18,10 @@
       "@canserkanuren/about": ["packages/about/src/index.ts"],
       "@canserkanuren/common": ["packages/common/src/index.ts"],
       "@canserkanuren/data": ["packages/data/src/index.ts"],
+      "@canserkanuren/education": ["packages/education/src/index.ts"],
       "@canserkanuren/profile": ["packages/profile/src/index.ts"],
       "@canserkanuren/skills": ["packages/skills/src/index.ts"],
-      "@canserkanuren/education": ["packages/education/src/index.ts"],
+      "@canserkanuren/store": ["packages/store/src/index.ts"],
       "@canserkanuren/work-experiences": [
         "packages/work-experiences/src/index.ts"
       ],
