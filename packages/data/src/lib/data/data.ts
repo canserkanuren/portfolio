@@ -103,7 +103,7 @@ export const frenchResume: Resume = {
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman']
         },
         { name: 'Design', skills: ['Figma'] },
-        { name: 'Methdology', skills: ['SAFe'] }
+        { name: 'Methodology', skills: ['SAFe'] }
       ]
     },
     {
