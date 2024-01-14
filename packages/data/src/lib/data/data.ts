@@ -60,7 +60,7 @@ export const frenchResume: Resume = {
           skills: ['Visual Studio Code', 'Postman']
         },
         { name: 'Design', skills: ['Figma'] },
-        { name: 'Methdology', skills: ['Agile Scrum'] }
+        { name: 'Methodology', skills: ['Agile Scrum'] }
       ]
     },
     {
@@ -153,7 +153,7 @@ export const frenchResume: Resume = {
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman', 'Insomnia']
         },
         { name: 'Design', skills: ['Figma'] },
-        { name: 'Methdology', skills: ['Agile Scrum'] }
+        { name: 'Methodology', skills: ['Agile Scrum'] }
       ]
     },
     {
@@ -187,7 +187,7 @@ export const frenchResume: Resume = {
           name: 'Development Tools',
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman']
         },
-        { name: 'Methdology', skills: ['Agile Scrum'] }
+        { name: 'Methodology', skills: ['Agile Scrum'] }
       ]
     }
   ],
@@ -256,7 +256,7 @@ export const frenchResume: Resume = {
       name: 'Design',
       skills: ['Figma']
     },
-    { name: 'Methdology', skills: ['Agile Scrum', 'TDD', 'SAFe'] },
+    { name: 'Methodology', skills: ['Agile Scrum', 'TDD', 'SAFe'] },
     { name: 'Others', skills: ['Vault'] }
   ]
 };
@@ -309,7 +309,7 @@ export const englishResume: Resume = {
           skills: ['Visual Studio Code', 'Postman']
         },
         { name: 'Design', skills: ['Figma'] },
-        { name: 'Methdology', skills: ['Agile Scrum'] }
+        { name: 'Methodology', skills: ['Agile Scrum'] }
       ]
     },
     {
@@ -352,7 +352,7 @@ export const englishResume: Resume = {
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman']
         },
         { name: 'Design', skills: ['Figma'] },
-        { name: 'Methdology', skills: ['SAFe'] }
+        { name: 'Methodology', skills: ['SAFe'] }
       ]
     },
     {
@@ -402,7 +402,7 @@ export const englishResume: Resume = {
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman', 'Insomnia']
         },
         { name: 'Design', skills: ['Figma'] },
-        { name: 'Methdology', skills: ['Agile Scrum'] }
+        { name: 'Methodology', skills: ['Agile Scrum'] }
       ]
     },
     {
@@ -436,7 +436,7 @@ export const englishResume: Resume = {
           name: 'Development Tools',
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman']
         },
-        { name: 'Methdology', skills: ['Agile Scrum'] }
+        { name: 'Methodology', skills: ['Agile Scrum'] }
       ]
     }
   ],
@@ -505,7 +505,7 @@ export const englishResume: Resume = {
       name: 'Design',
       skills: ['Figma']
     },
-    { name: 'Methdology', skills: ['Agile Scrum', 'TDD', 'SAFe'] },
+    { name: 'Methodology', skills: ['Agile Scrum', 'TDD', 'SAFe'] },
     { name: 'Others', skills: ['Vault'] }
   ]
 };
