@@ -56,6 +56,7 @@ export class HlmLabelDirective implements OnInit {
         if (mutation.attributeName !== 'data-disabled') return;
         // eslint-disable-next-line
         const state =
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           (mutation.target as any).attributes.getNamedItem(
             mutation.attributeName
           )?.value === 'true';
