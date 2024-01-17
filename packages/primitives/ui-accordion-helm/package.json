@@ -6,7 +6,7 @@
     "@ng-icons/radix-icons": "^25.1.0",
     "@spartan-ng/ui-accordion-brain": "0.0.1-alpha.319",
     "@spartan-ng/ui-core": "0.0.1-alpha.319",
-    "@spartan-ng/ui-icon-helm": "0.0.1",
+    "@canserkanuren/ui-icon-helm": "0.0.1",
     "clsx": "^1.2.1"
   },
   "dependencies": {},

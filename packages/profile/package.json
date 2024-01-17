@@ -5,10 +5,10 @@
     "@angular/core": "^17.0.0",
     "@canserkanuren/data": "0.0.1",
     "@canserkanuren/store": "0.0.1",
-    "@ng-icons/radix-icons": "^25.1.0",
-    "@spartan-ng/ui-button-helm": "0.0.1",
-    "@spartan-ng/ui-icon-helm": "0.0.1",
-    "@spartan-ng/ui-typography-helm": "0.0.1"
+    "@canserkanuren/ui-button-helm": "0.0.1",
+    "@canserkanuren/ui-icon-helm": "0.0.1",
+    "@canserkanuren/ui-typography-helm": "0.0.1",
+    "@ng-icons/radix-icons": "^25.1.0"
   },
   "dependencies": {},
   "sideEffects": false,

@@ -6,7 +6,7 @@
     "@canserkanuren/common": "0.0.1",
     "@canserkanuren/data": "0.0.1",
     "@canserkanuren/store": "0.0.1",
-    "@spartan-ng/ui-typography-helm": "0.0.1"
+    "@canserkanuren/ui-typography-helm": "0.0.1"
   },
   "dependencies": {},
   "sideEffects": false,
