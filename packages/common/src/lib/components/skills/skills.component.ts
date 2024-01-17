@@ -1,6 +1,6 @@
 import { Component, Input, signal } from '@angular/core';
 import { Skill } from '@canserkanuren/data';
-import { HlmUlDirective } from '@spartan-ng/ui-typography-helm';
+import { HlmUlDirective } from '@canserkanuren/ui-typography-helm';
 
 @Component({
   selector: 'csu-portfolio-skills',

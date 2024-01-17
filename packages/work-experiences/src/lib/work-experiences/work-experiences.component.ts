@@ -2,15 +2,15 @@ import { Component, Signal, inject } from '@angular/core';
 import { SkillsComponent } from '@canserkanuren/common';
 import { WorkExperience } from '@canserkanuren/data';
 import { ResumeStore } from '@canserkanuren/store';
-import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
-import { HlmAccordionImports } from '@spartan-ng/ui-accordion-helm';
-import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
+import { HlmAccordionImports } from '@canserkanuren/ui-accordion-helm';
+import { HlmIconComponent } from '@canserkanuren/ui-icon-helm';
 import {
   HlmH2Directive,
   HlmH3Directive,
   HlmPDirective,
   HlmUlDirective
-} from '@spartan-ng/ui-typography-helm';
+} from '@canserkanuren/ui-typography-helm';
+import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
 
 @Component({
   selector: 'csu-portfolio-work-experiences',

@@ -1,5 +1,5 @@
 {
-  "name": "@spartan-ng/ui-label-helm",
+  "name": "@canserkanuren/ui-label-helm",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^17.0.0",

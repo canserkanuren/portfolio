@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ResumeStore } from '@canserkanuren/store';
-import { HlmH2Directive, HlmPDirective } from '@spartan-ng/ui-typography-helm';
+import { HlmH2Directive, HlmPDirective } from '@canserkanuren/ui-typography-helm';
 
 @Component({
   selector: 'csu-portfolio-about',

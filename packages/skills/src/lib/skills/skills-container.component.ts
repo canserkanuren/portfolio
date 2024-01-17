@@ -2,7 +2,7 @@ import { Component, Signal, inject } from '@angular/core';
 import { SkillsComponent } from '@canserkanuren/common';
 import { Skill } from '@canserkanuren/data';
 import { ResumeStore } from '@canserkanuren/store';
-import { HlmH2Directive } from '@spartan-ng/ui-typography-helm';
+import { HlmH2Directive } from '@canserkanuren/ui-typography-helm';
 
 @Component({
   selector: 'csu-portfolio-skills-container',

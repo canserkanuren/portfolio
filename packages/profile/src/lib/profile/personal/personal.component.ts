@@ -1,5 +1,5 @@
 import { Component, Input, signal } from '@angular/core';
-import { HlmH1Directive, HlmH4Directive } from '@spartan-ng/ui-typography-helm';
+import { HlmH1Directive, HlmH4Directive } from '@canserkanuren/ui-typography-helm';
 
 @Component({
   selector: 'csu-portfolio-personal',

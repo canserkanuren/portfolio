@@ -1,5 +1,5 @@
 {
-  "name": "@spartan-ng/ui-accordion-helm",
+  "name": "@canserkanuren/ui-accordion-helm",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/core": "^17.0.0",

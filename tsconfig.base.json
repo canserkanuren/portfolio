@@ -42,24 +42,24 @@
       "@canserkanuren/work-experiences": [
         "packages/work-experiences/src/index.ts"
       ],
-      "@spartan-ng/ui-accordion-helm": [
+      "@canserkanuren/ui-accordion-helm": [
         "packages/primitives/ui-accordion-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-button-helm": [
+      "@canserkanuren/ui-button-helm": [
         "packages/primitives/ui-button-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-icon-helm": [
+      "@canserkanuren/ui-icon-helm": [
         "packages/primitives/ui-icon-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-label-helm": [
+      "@canserkanuren/ui-label-helm": [
         "packages/primitives/ui-label-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-switch-helm": [
+      "@canserkanuren/ui-switch-helm": [
         "packages/primitives/ui-switch-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-typography-helm": [
+      "@canserkanuren/ui-typography-helm": [
         "packages/primitives/ui-typography-helm/src/index.ts"
-      ]
+      ],
     }
   },
   "exclude": [

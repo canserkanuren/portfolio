@@ -1,9 +1,9 @@
 import { Component, Input, signal } from '@angular/core';
 import { Social } from '@canserkanuren/data';
+import { HlmButtonDirective } from '@canserkanuren/ui-button-helm';
+import { HlmIconComponent, provideIcons } from '@canserkanuren/ui-icon-helm';
+import { HlmH3Directive } from '@canserkanuren/ui-typography-helm';
 import { radixGithubLogo, radixLinkedinLogo } from '@ng-icons/radix-icons';
-import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
-import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
-import { HlmH3Directive } from '@spartan-ng/ui-typography-helm';
 
 @Component({
   selector: 'csu-portfolio-socials',

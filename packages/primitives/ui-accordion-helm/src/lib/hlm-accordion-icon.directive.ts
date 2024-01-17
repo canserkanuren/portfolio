@@ -6,9 +6,9 @@ import {
   Input,
   signal
 } from '@angular/core';
+import { HlmIconComponent, provideIcons } from '@canserkanuren/ui-icon-helm';
 import { radixChevronDown } from '@ng-icons/radix-icons';
 import { hlm } from '@spartan-ng/ui-core';
-import { HlmIconComponent, provideIcons } from '@spartan-ng/ui-icon-helm';
 import { ClassValue } from 'clsx';
 
 @Directive({
