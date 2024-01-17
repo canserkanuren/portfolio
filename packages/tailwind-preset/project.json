@@ -1,13 +1,6 @@
 {
   "projectType": "library",
   "sourceRoot": "packages/tailwind-preset",
-  "targets": {
-    "release": {
-      "executor": "nx-release:build-update-publish",
-      "options": {
-        "libName": "tailwind-preset"
-      }
-    }
-  },
+  "targets": {},
   "tags": []
 }
