@@ -6,6 +6,6 @@
   "module": "./index.mjs",
   "typings": "./index.d.ts",
   "publishConfig": {
-    "https://npm.pkg.github.com": "public"
+    "registry": "https://npm.pkg.github.com"
   }
 }

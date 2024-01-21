@@ -8,6 +8,6 @@
   },
   "sideEffects": false,
   "publishConfig": {
-    "https://npm.pkg.github.com": "public"
+    "registry": "https://npm.pkg.github.com"
   }
 }
