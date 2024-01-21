@@ -36,7 +36,10 @@ export const ResumeStore = signalStore(
   })),
   withHooks({
     onInit({ language, updateCurrentResumeByLanguage }) {
-      updateCurrentResumeByLanguage(language());
+      const navigatorLanguage = window.navigator.language.split(
+        '-'
+      )?.[1] as SupportedLanguage;
+      updateCurrentResumeByLanguage(navigatorLanguage || language());
     }
   })
 );

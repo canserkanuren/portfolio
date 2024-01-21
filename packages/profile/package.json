@@ -13,6 +13,6 @@
   "dependencies": {},
   "sideEffects": false,
   "publishConfig": {
-    "access": "public"
+    "https://npm.pkg.github.com": "public"
   }
 }

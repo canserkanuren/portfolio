@@ -6,7 +6,7 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -34,9 +34,6 @@ jobs:
         run: |
           npm run lint --if-present
 
-      # - name: Test
-      #   run: |
-      #     npm run test --if-present
       - name: Test variables
         run: |
           if [ -n "$GITHUB_TOKEN" ]; then
@@ -44,14 +41,14 @@ jobs:
           else
             echo "Github Token NOT ok"
           fi
-          
+
           if [ -n "$NPM_TOKEN" ]; then
             echo "Npm token ok"
           else
             echo "Npm token NOT ok"
           fi
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_PERMISSION }}          
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_PERMISSION }}
           NPM_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
 
       - name: Release
@@ -59,3 +56,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN_PERMISSION }}
           NPM_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+          NPM_REGISTRY: ${{ vars.NPM_REGISTRY }}
