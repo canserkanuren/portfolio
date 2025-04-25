@@ -5,10 +5,9 @@ import { PersonalComponent } from './personal/personal.component';
 import { SocialsComponent } from './socials/socials.component';
 
 @Component({
-  selector: 'csu-portfolio-profile',
-  standalone: true,
-  imports: [SocialsComponent, PersonalComponent],
-  template: `
+    selector: 'csu-portfolio-profile',
+    imports: [SocialsComponent, PersonalComponent],
+    template: `
     <section
       class="w-100 flex flex-col-reverse gap-3 justify-between text-center md:flex-row md:gap-0 md:text-start"
     >

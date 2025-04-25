@@ -1,9 +1,11 @@
+import { inject } from '@angular/core';
 import {
   ALL_RESUMES,
   Resume,
   SupportedLanguage,
   englishResume
 } from '@canserkanuren/data';
+import { TranslocoService } from '@jsverse/transloco';
 import {
   patchState,
   signalStore,
@@ -24,7 +26,7 @@ const resumeInitialState: ResumeStoreState = {
 };
 
 export const ResumeStore = signalStore(
-  { providedIn: 'root' },
+  { providedIn: 'root', protectedState: false },
   withState(resumeInitialState),
   withResumeSelectors(),
   withMethods(store => ({
@@ -40,6 +42,9 @@ export const ResumeStore = signalStore(
         '-'
       )?.[1] as SupportedLanguage;
       updateCurrentResumeByLanguage(navigatorLanguage || language());
+      const translocoService = inject(TranslocoService);
+
+      translocoService.setActiveLang(language());
     }
   })
 );

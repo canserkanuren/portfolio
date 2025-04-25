@@ -6,17 +6,16 @@ import { WorkExperiencesComponent } from '@canserkanuren/work-experiences';
 import { LanguagesChoiceComponent } from './languages-choice/languages-choice.component';
 
 @Component({
-  standalone: true,
-  imports: [
-    // custom components
-    AboutComponent,
-    ProfileComponent,
-    WorkExperiencesComponent,
-    SkillsContainerComponent,
-    LanguagesChoiceComponent
-  ],
-  selector: 'csu-portfolio-root',
-  template: `
+    imports: [
+        // custom components
+        AboutComponent,
+        ProfileComponent,
+        WorkExperiencesComponent,
+        SkillsContainerComponent,
+        LanguagesChoiceComponent
+    ],
+    selector: 'csu-portfolio-root',
+    template: `
     <main class="flex flex-col container px-10 py-5 gap-6 md:px-20">
       <csu-portfolio-languages-choice />
 

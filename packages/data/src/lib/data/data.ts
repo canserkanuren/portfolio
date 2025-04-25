@@ -16,15 +16,58 @@ export const frenchResume: Resume = {
   function: 'Lead Développeur Full Stack',
   socials: [...commonResumeProperties],
   aboutMe: [
-    'Je suis actuellement un Lead Développeur Angular, travaillant chez Crédit Agricole à Montrouge, Paris, avec de nombreuses compétences en développement front-end, méthodologie Scrum, mais aussi en CI/CD.',
-    "J'ai travaillé au cours des 6 dernières années à la Société Générale, en tant que Développeur Full Stack. Ma principale mission était de créer des outils bénéfiques aux développeurs de l'entreprise en mode self-care, tels que des outils d'onboarding dans le Cloud Platform de la Société Générale, mais aussi des outils de Software Factory (SonarQube, GitHub, Nexus, Artifactory, etc...)"
+    "Je suis actuellement un Ingénieur DevOps et Lead Software Craftman au sein de la Société Générale, plus particulièrement dans l'équipe en charge de toute la Software Factory Group.",
+    "J'ai travaillé au cours des dernières années à la Société Générale, en tant que Développeur Full Stack, mais aussi au sein du groupe Crédit Agricole, en tant que Lead Tech Angular."
   ],
   workExperiences: [
     {
-      title: 'Lead Développeur Tech Angular',
+      title: 'Ingénieur DevOps / Lead Software Craftman',
+      company: 'Société Générale',
+      begunYear: '09-2024',
+      endedYear: 'Présent',
+      summary:
+        "L'objectif de cette mission est de mettre en place des guidelines de développement au sein de l'équipe SRE de la Software Factory Group (composée d'une vingtaine de personnes) pour promouvoir la qualité du code, mais aussi de créer des outils pour faciliter le travail des développeurs (template de projets, mise en place de Pull Request pour promouvoir le partage de connaissance entre toute l'équipe), mais aussi de maintenir la plateforme de déploiement actuelle utilisée par les développeurs de la Société Générale.",
+      missions: [
+        "Établir des lignes directrices de développement au sein de l'équipe SRE pour promouvoir la qualité du code",
+        'Créer des outils pour faciliter le travail des développeurs, tels que des modèles de projets et des processus de Pull Request pour encourager le partage des connaissances',
+        'Maintenir la plateforme de déploiement actuelle utilisée par les développeurs de la Société Générale',
+        "Amélioration du portail de la Software Factory, en ajoutant de nouvelles fonctionnalités et en améliorant l'expérience utilisateur pour tout ce qui est lié au statut des différents outils de la Software Factory (Jenkins, GitHub, GitHub Actions, SonarQube, ArgoCD)"
+      ],
+      skills: [
+        {
+          name: 'Langages',
+          skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Python', 'Go']
+        },
+        {
+          name: 'Frameworks',
+          skills: ['Connexion', 'Flask', 'Angular', 'React']
+        },
+        {
+          name: "Tests unitaires / d'intégration",
+          skills: ['Jest', 'Vitest', 'pytest']
+        },
+        { name: 'Base de données', skills: ['PostgreSQL', 'Redis'] },
+        {
+          name: 'Intégration Continue',
+          skills: ['Jenkins', 'GitHub Actions', 'Artifactory', 'Harbor']
+        },
+        { name: 'Déploiement Continu', skills: ['ArgoCD', 'Kubernetes'] },
+        {
+          name: 'Outils de Développement',
+          skills: ['Visual Studio Code', 'Bruno']
+        },
+        {
+          name: 'Cloud Providers',
+          skills: ['Azure']
+        },
+        { name: 'Méthodologie', skills: ['SAFe'] }
+      ]
+    },
+    {
+      title: 'Lead Tech Angular',
       company: 'Crédit Agricole CIB',
       begunYear: '10-2023',
-      endedYear: 'Présent',
+      endedYear: '08-2024',
       summary:
         "L'objectif de cette mission était principalement d'améliorer l'application actuelle, en particulier en ce qui concerne les problèmes de performance, mais aussi sur la chaîne CI/CD.",
       missions: [
@@ -59,7 +102,6 @@ export const frenchResume: Resume = {
           name: 'Outils de Développement',
           skills: ['Visual Studio Code', 'Postman']
         },
-        { name: 'Design', skills: ['Figma'] },
         { name: 'Méthodologie', skills: ['Agile Scrum'] }
       ]
     },
@@ -102,7 +144,6 @@ export const frenchResume: Resume = {
           name: 'Outils de Développement',
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman']
         },
-        { name: 'Design', skills: ['Figma'] },
         { name: 'Méthodologie', skills: ['SAFe'] }
       ]
     },
@@ -152,7 +193,6 @@ export const frenchResume: Resume = {
           name: 'Outils de Développement',
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman', 'Insomnia']
         },
-        { name: 'Design', skills: ['Figma'] },
         { name: 'Méthodologie', skills: ['Agile Scrum'] }
       ]
     },
@@ -256,11 +296,10 @@ export const frenchResume: Resume = {
       skills: ['IntelliJ', 'Visual Studio Code', 'Postman', 'Insomnia']
     },
     {
-      name: 'Design',
-      skills: ['Figma']
+      name: 'Cloud Providers',
+      skills: ['Azure']
     },
-    { name: 'Méthodologie', skills: ['Agile Scrum', 'TDD', 'SAFe'] },
-    { name: 'Autres', skills: ['Vault'] }
+    { name: 'Méthodologie', skills: ['Agile Scrum', 'TDD', 'SAFe'] }
   ]
 };
 
@@ -268,21 +307,64 @@ export const englishResume: Resume = {
   function: 'Lead Full Stack Developer',
   socials: [...commonResumeProperties],
   aboutMe: [
-    'I am currently a Angular Tech Lead, working at Crédit Agricole in Montrouge, Paris, with many areas of expertise such as in front-end development, Scrum method but also in CI/CD.',
-    "I have been working for the past 6 years in Société Générale, as a Full Stack Developer and my main mission was to create tools that would benefit the company's developers in a self-care mode, such as onboarding tools in Société Générale's Cloud Platform but also on Software Factory tools (SonarQube, GitHub, Nexus, Artifactory, etc...)"
+    'I am currently a DevOps Engineer and Lead Software Craftsman at Société Générale, specifically within the team responsible for the entire Software Factory Group.',
+    'Over the past years, I have worked at Société Générale as a Full Stack Developer and at Crédit Agricole Group as an Angular Tech Lead.'
   ],
   workExperiences: [
+    {
+      title: 'DevOps Engineer / Lead Software Craftsman',
+      company: 'Société Générale',
+      begunYear: '09-2024',
+      endedYear: 'Present',
+      summary:
+        'The goal of this mission is to establish development guidelines within the SRE team of the Software Factory Group (composed of about twenty people) to promote code quality, create tools to facilitate developers’ work (project templates, Pull Request processes to encourage knowledge sharing across the team), and maintain the current deployment platform used by Société Générale developers.',
+      missions: [
+        'Establish development guidelines within the SRE team to promote code quality.',
+        'Create tools to facilitate developers’ work, such as project templates and Pull Request processes to encourage knowledge sharing.',
+        'Maintain the current deployment platform used by Société Générale developers.',
+        'Enhance the Software Factory portal by adding new features and improving the user experience related to the status of various Software Factory tools (Jenkins, GitHub, GitHub Actions, SonarQube, ArgoCD).'
+      ],
+      skills: [
+        {
+          name: 'Languages',
+          skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Python', 'Go']
+        },
+        {
+          name: 'Frameworks',
+          skills: ['Connexion', 'Flask', 'Angular', 'React']
+        },
+        {
+          name: 'Unit / Integration Testing',
+          skills: ['Jest', 'Vitest', 'pytest']
+        },
+        { name: 'Database', skills: ['PostgreSQL', 'Redis'] },
+        {
+          name: 'Continuous Integration',
+          skills: ['Jenkins', 'GitHub Actions', 'Artifactory', 'Harbor']
+        },
+        { name: 'Continuous Deployment', skills: ['ArgoCD', 'Kubernetes'] },
+        {
+          name: 'Development Tools',
+          skills: ['Visual Studio Code', 'Bruno']
+        },
+        {
+          name: 'Cloud Providers',
+          skills: ['Azure']
+        },
+        { name: 'Methodology', skills: ['SAFe'] }
+      ]
+    },
     {
       title: 'Angular Tech Lead',
       company: 'Crédit Agricole CIB',
       begunYear: '10-2023',
-      endedYear: 'Present',
+      endedYear: '08-2024',
       summary:
-        "This mission's goal was primarily enhancements of the current application, more precisely about performance issues when using it but also on the CI/CD chain ",
+        'The goal of this mission was primarily to enhance the current application, particularly addressing performance issues and improving the CI/CD pipeline.',
       missions: [
-        'Definition, conception and development of a new Angular project architecture, based on NX',
-        'Ensure code quality meets its standards, analyzed through SonarQube / Checkmarx',
-        'Definition, conception and development of new features'
+        'Define, design, and develop a new Angular project architecture based on NX.',
+        'Ensure code quality meets standards, analyzed through SonarQube / Checkmarx.',
+        'Define, design, and develop new features.'
       ],
       skills: [
         {
@@ -290,7 +372,7 @@ export const englishResume: Resume = {
           skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Python']
         },
         { name: 'Frameworks', skills: ['Angular', 'FastAPI'] },
-        { name: 'Unit / integration testing', skills: ['Jest', 'vitest'] },
+        { name: 'Unit / Integration Testing', skills: ['Jest', 'Vitest'] },
         { name: 'Database', skills: ['CouchBase'] },
         {
           name: 'Continuous Integration',
@@ -311,7 +393,6 @@ export const englishResume: Resume = {
           name: 'Development Tools',
           skills: ['Visual Studio Code', 'Postman']
         },
-        { name: 'Design', skills: ['Figma'] },
         { name: 'Methodology', skills: ['Agile Scrum'] }
       ]
     },
@@ -321,9 +402,9 @@ export const englishResume: Resume = {
       begunYear: '04-2021',
       endedYear: '10-2023',
       summary:
-        "Early 2021, Société Générale decided to converge CI/CD offers of all entities, by creating a new one, Digital & Data Services, which will handle all common offers for all Société Générale's developers. I've joined the Automation Squad as a Full Stack developer, in order to create self-service tools for developers (around 10 000). My role was also to create a whole new CI/CD chain, Helm charts but also usage of GitOps in our development process.",
+        'In early 2021, Société Générale decided to consolidate CI/CD offerings across all entities by creating a new entity, Digital & Data Services, to manage common offerings for all Société Générale developers. I joined the Automation Squad as a Full Stack Developer to create self-service tools for developers (around 10,000). My role also included creating a new CI/CD pipeline, Helm charts, and implementing GitOps in the development process.',
       missions: [
-        'Selection of a common back-end language (Java, TypeScript, Python) for my current team but also for all the service that I was in (around 80 developers)',
+        'Select a common back-end language (Java, TypeScript, Python) for my team and the services I participated in (around 80 developers).',
         'Creation of a Python API framework, that will be used by all the service',
         "Selection of a common front-end framework (React / Angular) and beginning of development of a portal, that'll be used by all Société Générale's developers, in order to onboarding themselves on the Software Factory tools",
         "Definition, conception and development of APIs and also support development teams in API definition but also on the portal's new features",
@@ -354,7 +435,6 @@ export const englishResume: Resume = {
           name: 'Development Tools',
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman']
         },
-        { name: 'Design', skills: ['Figma'] },
         { name: 'Methodology', skills: ['SAFe'] }
       ]
     },
@@ -404,7 +484,6 @@ export const englishResume: Resume = {
           name: 'Development Tools',
           skills: ['IntelliJ', 'Visual Studio Code', 'Postman', 'Insomnia']
         },
-        { name: 'Design', skills: ['Figma'] },
         { name: 'Methodology', skills: ['Agile Scrum'] }
       ]
     },
@@ -504,12 +583,7 @@ export const englishResume: Resume = {
       name: 'Development Tools',
       skills: ['IntelliJ', 'Visual Studio Code', 'Postman', 'Insomnia']
     },
-    {
-      name: 'Design',
-      skills: ['Figma']
-    },
-    { name: 'Methodology', skills: ['Agile Scrum', 'TDD', 'SAFe'] },
-    { name: 'Others', skills: ['Vault'] }
+    { name: 'Methodology', skills: ['Agile Scrum', 'TDD', 'SAFe'] }
   ]
 };
 

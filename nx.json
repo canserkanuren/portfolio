@@ -6,15 +6,6 @@
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     },
-    "lint": {
-      "cache": true,
-      "inputs": [
-        "default",
-        "{workspaceRoot}/.eslintrc.json",
-        "{workspaceRoot}/.eslintignore",
-        "{workspaceRoot}/eslint.config.js"
-      ]
-    },
     "@nx/jest:jest": {
       "cache": true,
       "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
@@ -32,9 +23,14 @@
       "cache": true,
       "inputs": ["default", "^production"]
     },
-    "@nx/vite:test": {
+    "@nx/eslint:lint": {
       "cache": true,
-      "inputs": ["default", "^production"]
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore",
+        "{workspaceRoot}/eslint.config.js"
+      ]
     }
   },
   "namedInputs": {
@@ -70,5 +66,7 @@
     "appsDir": "apps",
     "libsDir": "packages"
   },
-  "defaultProject": "portfolio"
+  "defaultProject": "portfolio",
+  "useInferencePlugins": false,
+  "useLegacyCache": true
 }

@@ -27,7 +27,7 @@ export class HlmAccordionDirective {
   protected readonly _computedClass = computed(() =>
     hlm(
       'flex',
-      this._brn.orientation === 'horizontal' ? 'flex-row' : 'flex-col',
+      this._brn.orientation() === 'horizontal' ? 'flex-row' : 'flex-col',
       this._userCls()
     )
   );

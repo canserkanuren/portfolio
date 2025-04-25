@@ -4,7 +4,6 @@ import { HlmUlDirective } from '@canserkanuren/ui-typography-helm';
 
 @Component({
   selector: 'csu-portfolio-skills',
-  standalone: true,
   imports: [HlmUlDirective],
   template: `
     <ul hlmUl>

@@ -3,18 +3,20 @@ import { SkillsComponent } from '@canserkanuren/common';
 import { Skill } from '@canserkanuren/data';
 import { ResumeStore } from '@canserkanuren/store';
 import { HlmH2Directive } from '@canserkanuren/ui-typography-helm';
+import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'csu-portfolio-skills-container',
-  standalone: true,
   imports: [
     // primitives
     HlmH2Directive,
     // common components
-    SkillsComponent
+    SkillsComponent,
+
+    TranslocoModule
   ],
   template: `
-    <h2 hlmH2>Skills</h2>
+    <h2 hlmH2 *transloco="let t">{{ t('SKILLS') }}</h2>
 
     <csu-portfolio-skills [skills]="skills()" />
   `

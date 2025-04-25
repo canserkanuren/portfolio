@@ -10,11 +10,11 @@ import {
   HlmPDirective,
   HlmUlDirective
 } from '@canserkanuren/ui-typography-helm';
+import { TranslocoModule } from '@jsverse/transloco';
 import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
 
 @Component({
   selector: 'csu-portfolio-work-experiences',
-  standalone: true,
   imports: [
     // primitives
     BrnAccordionContentComponent,
@@ -25,10 +25,11 @@ import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
     HlmPDirective,
     HlmUlDirective,
     // common components
-    SkillsComponent
+    SkillsComponent,
+    TranslocoModule
   ],
   template: `
-    <h2 hlmH2>Work experiences</h2>
+    <h2 hlmH2 *transloco="let t">{{ t('WORK_EXPERIENCES') }}</h2>
 
     <div hlmAccordion>
       @for (workExperience of workExperiences(); track workExperience.title) {
