@@ -58,14 +58,10 @@
           "buildTarget": "portfolio:build:production"
         },
         "development": {
-          "buildTarget": "portfolio:build:development",
-          "proxyConfig": "apps/portfolio/proxy.conf.json"
+          "buildTarget": "portfolio:build:development"
         }
       },
-      "defaultConfiguration": "development",
-      "options": {
-        "proxyConfig": "apps/portfolio/proxy.conf.json"
-      }
+      "defaultConfiguration": "development"
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
