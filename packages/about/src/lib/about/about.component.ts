@@ -1,4 +1,5 @@
 import { Component, inject } from '@angular/core';
+import { RevealDirective } from '@canserkanuren/common';
 import { ResumeStore } from '@canserkanuren/store';
 import {
   HlmH2Directive,
@@ -8,9 +9,9 @@ import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
   selector: 'csu-portfolio-about',
-  imports: [HlmH2Directive, HlmPDirective, TranslocoModule],
+  imports: [HlmH2Directive, HlmPDirective, TranslocoModule, RevealDirective],
   template: `
-    <section class="flex flex-col gap-2" *transloco="let t">
+    <section class="flex flex-col gap-2" csuReveal *transloco="let t">
       <h2 hlmH2>{{ t('ABOUT_ME') }}</h2>
 
       @for (description of aboutMe(); track description) {

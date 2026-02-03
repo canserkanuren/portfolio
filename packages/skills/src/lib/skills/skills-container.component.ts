@@ -1,5 +1,5 @@
 import { Component, Signal, computed, inject, signal } from '@angular/core';
-import { SkillsComponent } from '@canserkanuren/common';
+import { RevealDirective, SkillsComponent } from '@canserkanuren/common';
 import { Skill } from '@canserkanuren/data';
 import { ResumeStore } from '@canserkanuren/store';
 import { HlmButtonDirective } from '@canserkanuren/ui-button-helm';
@@ -12,10 +12,11 @@ import { TranslocoModule } from '@jsverse/transloco';
     HlmH2Directive,
     HlmButtonDirective,
     SkillsComponent,
-    TranslocoModule
+    TranslocoModule,
+    RevealDirective
   ],
   template: `
-    <section *transloco="let t">
+    <section csuReveal *transloco="let t">
       <h2 hlmH2>{{ t('SKILLS') }}</h2>
 
       <div class="flex flex-wrap gap-1.5 mb-4">
@@ -41,7 +42,7 @@ import { TranslocoModule } from '@jsverse/transloco';
         }
       </div>
 
-      <csu-portfolio-skills [skills]="filteredSkills()" />
+      <csu-portfolio-skills [skills]="filteredSkills()" [resetKey]="selectedCategory() ?? 'all'" />
     </section>
   `
 })

@@ -1,5 +1,5 @@
 import { Component, Signal, inject, signal } from '@angular/core';
-import { SkillsComponent } from '@canserkanuren/common';
+import { RevealDirective, SkillsComponent } from '@canserkanuren/common';
 import { WorkExperience } from '@canserkanuren/data';
 import { ResumeStore } from '@canserkanuren/store';
 import { HlmButtonDirective } from '@canserkanuren/ui-button-helm';
@@ -24,12 +24,13 @@ import { DateTime } from 'luxon';
     HlmPDirective,
     HlmUlDirective,
     SkillsComponent,
-    TranslocoModule
+    TranslocoModule,
+    RevealDirective
   ],
   providers: [provideIcons({ radixChevronRight, radixCross1 })],
   template: `
     <ng-container *transloco="let t">
-      <h2 hlmH2>{{ t('WORK_EXPERIENCES') }}</h2>
+      <h2 hlmH2 csuReveal>{{ t('WORK_EXPERIENCES') }}</h2>
 
       <!-- Clickable row list -->
       <div class="flex flex-col">
@@ -46,6 +47,8 @@ import { DateTime } from 'luxon';
           <button
             hlmBtn
             variant="ghost"
+            csuReveal
+            [revealDelay]="($index + 1) * 100"
             class="w-full justify-between border-b border-border rounded-none px-0.5 py-4 h-auto"
             (click)="openSheet(workExperience)"
           >
