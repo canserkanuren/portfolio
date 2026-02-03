@@ -11,6 +11,7 @@ export interface Resume {
 export interface Social {
   icon: string;
   url: string;
+  label: string;
 }
 
 export interface WorkExperience {

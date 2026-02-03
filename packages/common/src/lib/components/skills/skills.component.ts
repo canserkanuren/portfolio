@@ -1,21 +1,23 @@
 import { Component, Input, signal } from '@angular/core';
 import { Skill } from '@canserkanuren/data';
-import { HlmUlDirective } from '@canserkanuren/ui-typography-helm';
 
 @Component({
   selector: 'csu-portfolio-skills',
-  imports: [HlmUlDirective],
   template: `
-    <ul hlmUl>
-      @for (mission of _skills(); track mission) {
-        <li>
-          <strong class="me-0.5">{{ mission.name }}:</strong>
-          @for (skill of mission.skills; track skill) {
-            <span> {{ skill }}{{ $last ? '' : ',' }} </span>
-          }
-        </li>
+    <div class="flex flex-col gap-3">
+      @for (category of _skills(); track category.name) {
+        <div>
+          <p class="text-sm font-semibold text-muted-foreground mb-1.5">{{ category.name }}</p>
+          <div class="flex flex-wrap gap-1.5">
+            @for (skill of category.skills; track skill) {
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">
+                {{ skill }}
+              </span>
+            }
+          </div>
+        </div>
       }
-    </ul>
+    </div>
   `
 })
 export class SkillsComponent {

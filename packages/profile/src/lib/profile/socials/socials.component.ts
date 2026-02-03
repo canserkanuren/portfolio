@@ -26,15 +26,21 @@ import { radixGithubLogo, radixLinkedinLogo } from '@ng-icons/radix-icons';
 
       <div class="w-full flex flex-row gap-2 justify-center md:justify-start">
         @for (social of _socials(); track social.url) {
-          <a
-            hlmBtn
-            size="icon"
-            variant="outline"
-            [href]="social.url"
-            target="_blank"
-          >
-            <hlm-icon size="sm" [name]="social.icon" />
-          </a>
+          <div class="group relative">
+            <a
+              hlmBtn
+              size="icon"
+              variant="outline"
+              [href]="social.url"
+              target="_blank"
+              [aria-label]="social.label"
+            >
+              <hlm-icon size="sm" [name]="social.icon" />
+            </a>
+            <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-0.5 text-xs bg-popover text-popover-foreground border rounded shadow-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none">
+              {{ social.label }}
+            </span>
+          </div>
         }
       </div>
     </section>

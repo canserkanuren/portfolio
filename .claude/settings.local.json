@@ -9,9 +9,8 @@
       "Bash(npx ng update:*)",
       "Bash(pnpm list:*)",
       "Bash(npm view:*)",
-      "Bash(for pkg in \"@angular/core\" \"@angular/cli\" \"@angular/cdk\" \"@angular-devkit/build-angular\" \"@angular-devkit/core\" \"@angular-devkit/schematics\" \"@angular-eslint/eslint-plugin\" \"@schematics/angular\" \"ng-packagr\" \"jest-preset-angular\" \"vitest\")",
-      "Bash(done)",
-      "Bash(npx nx run-many:*)"
+      "Bash(npx nx run-many:*)",
+      "Bash(npx nx run:*)"
     ]
   }
 }

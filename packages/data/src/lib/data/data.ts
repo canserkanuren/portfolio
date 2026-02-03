@@ -5,11 +5,13 @@ import { Resume } from './data.interface';
 export const commonResumeProperties: Resume['socials'] = [
   {
     icon: 'radixLinkedinLogo',
-    url: 'https://www.linkedin.com/in/can-serkan-uren/'
+    url: 'https://www.linkedin.com/in/can-serkan-uren/',
+    label: 'LinkedIn'
   },
   {
     icon: 'radixGithubLogo',
-    url: 'https://github.com/canserkanuren'
+    url: 'https://github.com/canserkanuren',
+    label: 'GitHub'
   }
 ];
 
