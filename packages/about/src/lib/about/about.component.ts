@@ -13,7 +13,7 @@ import { TranslocoModule } from '@jsverse/transloco';
     <section class="flex flex-col gap-2" *transloco="let t">
       <h2 hlmH2>{{ t('ABOUT_ME') }}</h2>
 
-      @for (description of aboutMe(); track aboutMe) {
+      @for (description of aboutMe(); track description) {
         <p hlmP>{{ description }}</p>
       }
     </section>

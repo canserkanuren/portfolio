@@ -308,7 +308,7 @@ export const englishResume: Resume = {
   function: 'Lead Full Stack Developer',
   socials: [...commonResumeProperties],
   aboutMe: [
-    'I am currently a DevOps Engineer and Lead Software Craftsman at Société Générale, specifically within the team responsible for the entire Software Factory Group.',
+    'I am currently a DevOps Engineer and Lead Software Craftsman at Société Générale, specifically within the team responsible for the entire Group Software Factory.',
     'Over the past years, I have worked at Société Générale as a Full Stack Developer and at Crédit Agricole Group as an Angular Tech Lead.'
   ],
   workExperiences: [
@@ -318,7 +318,7 @@ export const englishResume: Resume = {
       begunYear: DateTime.fromFormat('2024-09', 'yyyy-MM'),
       endedYear: DateTime.now(),
       summary:
-        'The goal of this mission is to establish development guidelines within the SRE team of the Software Factory Group (composed of about twenty people) to promote code quality, create tools to facilitate developers’ work (project templates, Pull Request processes to encourage knowledge sharing across the team), and maintain the current deployment platform used by Société Générale developers.',
+        'The goal of this mission is to establish development guidelines within the SRE team of the Group Software Factory (composed of about twenty people) to promote code quality, create tools to facilitate developers’ work (project templates, Pull Request processes to encourage knowledge sharing across the team), and maintain the current deployment platform used by Société Générale developers.',
       missions: [
         'Establish development guidelines within the SRE team to promote code quality.',
         'Create tools to facilitate developers’ work, such as project templates and Pull Request processes to encourage knowledge sharing.',
