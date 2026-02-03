@@ -38,13 +38,13 @@ export const ResumeStore = signalStore(
   })),
   withHooks({
     onInit({ language, updateCurrentResumeByLanguage }) {
-      const navigatorLanguage = window.navigator.language.split(
-        '-'
-      )?.[1] as SupportedLanguage;
+      const navigatorLanguage = window.navigator.language
+        .split('-')?.[0]
+        ?.toUpperCase() as SupportedLanguage;
       updateCurrentResumeByLanguage(navigatorLanguage || language());
       const translocoService = inject(TranslocoService);
 
-      translocoService.setActiveLang(language());
+      translocoService.setActiveLang(language().toLowerCase());
     }
   })
 );
