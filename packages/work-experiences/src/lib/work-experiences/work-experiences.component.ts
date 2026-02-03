@@ -1,4 +1,4 @@
-import { Component, Signal, inject } from '@angular/core';
+import { Component, Signal, inject, signal } from '@angular/core';
 import { SkillsComponent } from '@canserkanuren/common';
 import { WorkExperience } from '@canserkanuren/data';
 import { ResumeStore } from '@canserkanuren/store';
@@ -12,6 +12,7 @@ import {
 } from '@canserkanuren/ui-typography-helm';
 import { TranslocoModule } from '@jsverse/transloco';
 import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
+import { DateTime } from 'luxon';
 
 @Component({
   selector: 'csu-portfolio-work-experiences',
@@ -29,53 +30,73 @@ import { BrnAccordionContentComponent } from '@spartan-ng/ui-accordion-brain';
     TranslocoModule
   ],
   template: `
-    <h2 hlmH2 *transloco="let t">{{ t('WORK_EXPERIENCES') }}</h2>
+    <ng-container *transloco="let t">
+      <h2 hlmH2>{{ t('WORK_EXPERIENCES') }}</h2>
 
-    <div hlmAccordion>
-      @for (workExperience of workExperiences(); track workExperience.title) {
-        <div hlmAccordionItem>
-          <button hlmAccordionTrigger>
-            <strong>
-              {{ workExperience.title }} &#64; {{ workExperience.company }},
-              from {{ workExperience.begunYear }} to
-              {{ workExperience.endedYear }}
-            </strong>
-            <hlm-icon hlmAccIcon />
-          </button>
+      <div hlmAccordion type="multiple">
+        @for (workExperience of workExperiences(); track workExperience.title) {
+          <div hlmAccordionItem>
+            @let begunYear =
+              workExperience.begunYear.toLocaleString({
+                month: 'long',
+                year: 'numeric'
+              });
 
-          <brn-accordion-content hlm>
-            <section class="mb-2">
-              <h3 hlmH3>Summary</h3>
-              <p hlmP>
-                {{ workExperience.summary }}
-              </p>
-            </section>
+            @let endedYear =
+              workExperience.endedYear.toLocaleString({
+                month: 'long',
+                year: 'numeric'
+              });
 
-            <section class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2">
-              <section>
-                <h3 hlmH3>Missions</h3>
+            <button hlmAccordionTrigger>
+              <strong>
+                {{ workExperience.title }} &#64; {{ workExperience.company }},
+                {{ begunYear }} {{ t('TO') }}
+                {{ endedYear === this.now() ? t('NOW') : endedYear }}
+              </strong>
+              <hlm-icon hlmAccIcon />
+            </button>
 
-                <ul hlmUl>
-                  @for (mission of workExperience.missions; track mission) {
-                    <li>{{ mission }}</li>
-                  }
-                </ul>
+            <brn-accordion-content hlm>
+              <section class="mb-2">
+                <h3 hlmH3>Summary</h3>
+                <p hlmP>
+                  {{ workExperience.summary }}
+                </p>
               </section>
 
-              <section>
-                <h3 hlmH3>Skills</h3>
+              <section class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2">
+                <section>
+                  <h3 hlmH3>Missions</h3>
 
-                <csu-portfolio-skills [skills]="workExperience.skills" />
+                  <ul hlmUl>
+                    @for (mission of workExperience.missions; track mission) {
+                      <li>{{ mission }}</li>
+                    }
+                  </ul>
+                </section>
+
+                <section>
+                  <h3 hlmH3>Skills</h3>
+
+                  <csu-portfolio-skills [skills]="workExperience.skills" />
+                </section>
               </section>
-            </section>
-          </brn-accordion-content>
-        </div>
-      }
-    </div>
+            </brn-accordion-content>
+          </div>
+        }
+      </div>
+    </ng-container>
   `
 })
 export class WorkExperiencesComponent {
   private readonly store = inject(ResumeStore);
 
   workExperiences: Signal<WorkExperience[]> = this.store.workExperience;
+  now = signal(
+    DateTime.now().toLocaleString({
+      month: 'long',
+      year: 'numeric'
+    })
+  );
 }

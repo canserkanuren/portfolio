@@ -1,3 +1,4 @@
+import { DateTime } from 'luxon';
 import { SupportedLanguage } from '../enums';
 import { Resume } from './data.interface';
 
@@ -23,8 +24,8 @@ export const frenchResume: Resume = {
     {
       title: 'Ingénieur DevOps / Lead Software Craftman',
       company: 'Société Générale',
-      begunYear: '09-2024',
-      endedYear: 'Présent',
+      begunYear: DateTime.fromFormat('2024-09', 'yyyy-MM'),
+      endedYear: DateTime.now(),
       summary:
         "L'objectif de cette mission est de mettre en place des guidelines de développement au sein de l'équipe SRE de la Software Factory Group (composée d'une vingtaine de personnes) pour promouvoir la qualité du code, mais aussi de créer des outils pour faciliter le travail des développeurs (template de projets, mise en place de Pull Request pour promouvoir le partage de connaissance entre toute l'équipe), mais aussi de maintenir la plateforme de déploiement actuelle utilisée par les développeurs de la Société Générale.",
       missions: [
@@ -66,8 +67,8 @@ export const frenchResume: Resume = {
     {
       title: 'Lead Tech Angular',
       company: 'Crédit Agricole CIB',
-      begunYear: '10-2023',
-      endedYear: '08-2024',
+      begunYear: DateTime.fromFormat('2023-10', 'yyyy-MM'),
+      endedYear: DateTime.fromFormat('2024-08', 'yyyy-MM'),
       summary:
         "L'objectif de cette mission était principalement d'améliorer l'application actuelle, en particulier en ce qui concerne les problèmes de performance, mais aussi sur la chaîne CI/CD.",
       missions: [
@@ -108,8 +109,8 @@ export const frenchResume: Resume = {
     {
       title: 'Lead Développeur Full Stack / Scrum Master',
       company: 'Société Générale',
-      begunYear: '04-2021',
-      endedYear: '10-2023',
+      begunYear: DateTime.fromFormat('2021-04', 'yyyy-MM'),
+      endedYear: DateTime.fromFormat('2023-10', 'yyyy-MM'),
       summary:
         "Début 2021, la Société Générale a décidé de regrouper les offres CI/CD de toutes ses entités en créant une nouvelle entité, Digital & Data Services, qui gérera toutes les offres communes pour tous les développeurs de la Société Générale. J'ai rejoint l'Automation Squad en tant que développeur Full Stack, afin de créer des outils en libre-service pour les développeurs (environ 10 000). Mon rôle était également de créer une toute nouvelle chaîne CI/CD, des Helm charts, mais aussi d'utiliser le GitOps dans notre processus de développement.",
       missions: [
@@ -150,8 +151,8 @@ export const frenchResume: Resume = {
     {
       title: 'Architecte Livraison Continue',
       company: 'Société Générale',
-      begunYear: '09-2019',
-      endedYear: '04-2021',
+      begunYear: DateTime.fromFormat('2019-09', 'yyyy-MM'),
+      endedYear: DateTime.fromFormat('2021-04', 'yyyy-MM'),
       summary:
         "Mon rôle pour cette mission était de maintenir la plateforme de déploiement actuelle utilisée par les développeurs de la Société Générale, qui était Alien4Cloud, mais aussi de créer des applications autour de celle-ci pour en faciliter l'utilisation.",
       missions: [
@@ -199,8 +200,8 @@ export const frenchResume: Resume = {
     {
       title: 'Développeur Full Stack',
       company: 'Société Générale',
-      begunYear: '09-2017',
-      endedYear: '09-2019',
+      begunYear: DateTime.fromFormat('2017-09', 'yyyy-MM'),
+      endedYear: DateTime.fromFormat('2019-09', 'yyyy-MM'),
       summary: '',
       missions: [
         'Définition de services Web REST',
@@ -314,8 +315,8 @@ export const englishResume: Resume = {
     {
       title: 'DevOps Engineer / Lead Software Craftsman',
       company: 'Société Générale',
-      begunYear: '09-2024',
-      endedYear: 'Present',
+      begunYear: DateTime.fromFormat('2024-09', 'yyyy-MM'),
+      endedYear: DateTime.now(),
       summary:
         'The goal of this mission is to establish development guidelines within the SRE team of the Software Factory Group (composed of about twenty people) to promote code quality, create tools to facilitate developers’ work (project templates, Pull Request processes to encourage knowledge sharing across the team), and maintain the current deployment platform used by Société Générale developers.',
       missions: [
@@ -357,8 +358,8 @@ export const englishResume: Resume = {
     {
       title: 'Angular Tech Lead',
       company: 'Crédit Agricole CIB',
-      begunYear: '10-2023',
-      endedYear: '08-2024',
+      begunYear: DateTime.fromFormat('2023-10', 'yyyy-MM'),
+      endedYear: DateTime.fromFormat('2024-08', 'yyyy-MM'),
       summary:
         'The goal of this mission was primarily to enhance the current application, particularly addressing performance issues and improving the CI/CD pipeline.',
       missions: [
@@ -399,8 +400,8 @@ export const englishResume: Resume = {
     {
       title: 'Lead Full Stack Developer / Scrum Master',
       company: 'Société Générale',
-      begunYear: '04-2021',
-      endedYear: '10-2023',
+      begunYear: DateTime.fromFormat('2021-04', 'yyyy-MM'),
+      endedYear: DateTime.fromFormat('2023-10', 'yyyy-MM'),
       summary:
         'In early 2021, Société Générale decided to consolidate CI/CD offerings across all entities by creating a new entity, Digital & Data Services, to manage common offerings for all Société Générale developers. I joined the Automation Squad as a Full Stack Developer to create self-service tools for developers (around 10,000). My role also included creating a new CI/CD pipeline, Helm charts, and implementing GitOps in the development process.',
       missions: [
@@ -441,8 +442,8 @@ export const englishResume: Resume = {
     {
       title: 'Continuous Delivery Architect',
       company: 'Société Générale',
-      begunYear: '09-2019',
-      endedYear: '04-2021',
+      begunYear: DateTime.fromFormat('2019-09', 'yyyy-MM'),
+      endedYear: DateTime.fromFormat('2021-04', 'yyyy-MM'),
       summary:
         "My role for this mission was to maintain the current deployment platform used by Société Générale's developers, which was Alien4Cloud, but also create applications around it, to make its use a lot easier than it was before.",
       missions: [
@@ -490,8 +491,8 @@ export const englishResume: Resume = {
     {
       title: 'Full Stack Developer',
       company: 'Société Générale',
-      begunYear: '09-2017',
-      endedYear: '09-2019',
+      begunYear: DateTime.fromFormat('2017-09', 'yyyy-MM'),
+      endedYear: DateTime.fromFormat('2019-09', 'yyyy-MM'),
       summary: '',
       missions: [
         'Definition of REST WebServices',

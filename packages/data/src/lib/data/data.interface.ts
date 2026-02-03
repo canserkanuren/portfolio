@@ -1,3 +1,5 @@
+import { DateTimeMaybeValid } from 'luxon';
+
 export interface Resume {
   function: string;
   socials: Social[];
@@ -14,8 +16,8 @@ export interface Social {
 export interface WorkExperience {
   title: string;
   company: string;
-  begunYear: string;
-  endedYear: string;
+  begunYear: DateTimeMaybeValid;
+  endedYear: DateTimeMaybeValid;
   summary: string;
   missions: string[];
   skills: Skill[];
