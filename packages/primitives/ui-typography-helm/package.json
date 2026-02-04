@@ -1,14 +1,6 @@
 {
   "name": "@canserkanuren/ui-typography-helm",
   "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/core": "^17.0.0",
-    "@spartan-ng/ui-core": "^0.0.1-alpha.319",
-    "clsx": "^1.2.1"
-  },
   "dependencies": {},
-  "sideEffects": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "sideEffects": false
 }

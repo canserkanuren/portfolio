@@ -1,13 +1,5 @@
 {
   "name": "@canserkanuren/store",
   "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/core": "^17.0.0",
-    "@canserkanuren/data": "1.0.0",
-    "@ngrx/signals": "17.0.1"
-  },
-  "sideEffects": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "sideEffects": false
 }

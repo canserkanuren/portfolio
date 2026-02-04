@@ -1,16 +1,6 @@
 {
   "name": "@canserkanuren/skills",
   "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/core": "^17.0.0",
-    "@canserkanuren/common": "0.0.1",
-    "@canserkanuren/data": "0.0.1",
-    "@canserkanuren/store": "0.0.1",
-    "@canserkanuren/ui-typography-helm": "0.0.1"
-  },
   "dependencies": {},
-  "sideEffects": false,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "sideEffects": false
 }
