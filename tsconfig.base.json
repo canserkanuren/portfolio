@@ -10,18 +10,35 @@
     "importHelpers": true,
     "target": "es2022",
     "module": "preserve",
-    "lib": ["es2022", "dom"],
+    "lib": [
+      "es2022",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@canserkanuren/about": ["packages/about/src/index.ts"],
-      "@canserkanuren/common": ["packages/common/src/index.ts"],
-      "@canserkanuren/data": ["packages/data/src/index.ts"],
-      "@canserkanuren/education": ["packages/education/src/index.ts"],
-      "@canserkanuren/profile": ["packages/profile/src/index.ts"],
-      "@canserkanuren/skills": ["packages/skills/src/index.ts"],
-      "@canserkanuren/store": ["packages/store/src/index.ts"],
+      "@canserkanuren/about": [
+        "packages/about/src/index.ts"
+      ],
+      "@canserkanuren/common": [
+        "packages/common/src/index.ts"
+      ],
+      "@canserkanuren/data": [
+        "packages/data/src/index.ts"
+      ],
+      "@canserkanuren/education": [
+        "packages/education/src/index.ts"
+      ],
+      "@canserkanuren/profile": [
+        "packages/profile/src/index.ts"
+      ],
+      "@canserkanuren/skills": [
+        "packages/skills/src/index.ts"
+      ],
+      "@canserkanuren/store": [
+        "packages/store/src/index.ts"
+      ],
       "@canserkanuren/ui-accordion-helm": [
         "packages/primitives/ui-accordion-helm/src/index.ts"
       ],
@@ -42,10 +59,16 @@
       ],
       "@canserkanuren/work-experiences": [
         "packages/work-experiences/src/index.ts"
+      ],
+      "@canserkanuren/ui-sheet-helm": [
+        "packages/primitives/ui-sheet-helm/src/index.ts"
       ]
     }
   },
-  "exclude": ["node_modules", "tmp"],
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
